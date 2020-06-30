@@ -1,6 +1,7 @@
 
 <h1>Post</h1><br><br>
 <%= form_for @post do |p| %>
+    <%= p.text_area :title, placeholder:'Add your title here' %><br>
     <%= p.text_area :content, placeholder:'Add your post here' %><br><br>
     <%= p.submit%>
 <% end %>
