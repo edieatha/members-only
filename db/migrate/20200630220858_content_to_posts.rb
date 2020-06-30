@@ -3,4 +3,3 @@ class ContentToPosts < ActiveRecord::Migration[6.0]
     add_column :posts, :content, :text
   end
 end
-add_column :posts, :user_id, :integer
