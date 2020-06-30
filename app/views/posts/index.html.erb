@@ -4,8 +4,11 @@
 	    <li>
 	      <%= p.content %>
 				<% if user_signed_in? %>
-					Author:<%= current_user.username %>
+					Author:<%= current_user.email %>
 				<% end %>
 		  </li>
 		  <% end %>
 	</ul>
+
+	<%= link_to 'Sign Out', destroy_user_session_path, method: :delete %> <br>
+	<%= link_to 'Sign In', new_user_session_path %>
