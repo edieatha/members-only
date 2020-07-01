@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
 <h1>All Posts</h1>
 	<ul id="posts">
 	  <% @posts.each do |p| %>
@@ -11,6 +13,6 @@
 	</ul>
 
 	 
-	<%= link_to 'Sign Out', destroy_user_session_path, method: :delete %> <br>
-	<%= link_to 'Sign In', new_user_session_path %>
-	<%= link_to 'Create Post', new_post_path %>
+	<%= link_to 'Sign Out', destroy_user_session_path, class: "btn btn-default btn-primary btn-danger", method: :delete %> 
+	<%= link_to 'Sign In', new_user_session_path, class: "btn btn-default btn-primary"%>
+	<%= link_to 'Create Post', new_post_path, class: "btn btn-default btn-primary" %>
