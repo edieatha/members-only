@@ -1,0 +1,60 @@
+body {
+  background-color: rgb(230, 230, 230);
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-left: auto;
+  margin-top: 10rem;
+  text-align: center;
+
+}
+
+.title_textarea {
+  border-radius: 0.5rem;
+  border-style: none;
+  margin-bottom: 15px;
+  padding: 0.5rem;
+  width: 30rem;
+}
+
+
+.post_textarea {
+  border-radius: 0.5rem;
+  border-style: none;
+  height: 10rem;
+  margin-bottom: 15px;
+  padding: 0.5rem;
+  width: 30rem;
+}
+
+.email_field {
+  border-radius: 0.5rem;
+  margin-bottom: 15px;
+  padding: 0.5rem;
+  width: 25rem;
+}
+
+.password_field {
+  border-radius: 0.5rem;
+  margin-bottom: 15px;
+  padding: 0.5rem;
+  width: 25rem;
+}
+
+.login_btn {
+	width: 25rem;
+}
+
+#posts {
+  font-family: 'Source Sans Pro', sans-serif;
+  list-style: none;
+  margin: auto;
+  width: 800px;
+}
+
+
+#posts > li {
+  background-color: rgb(214, 214, 214);
+  border-radius: 0.5rem;
+  list-style: none;
+  margin-bottom: 5px;
+  text-decoration-style: none;
+}

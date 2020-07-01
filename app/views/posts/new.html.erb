@@ -1,9 +1,13 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-<h1>Post</h1><br><br>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+<%= stylesheet_link_tag "style.css" %>
+
+<h1>Create New Post</h1><br><br>
 <%= form_for @post do |p| %>
-    <%= p.text_area :title, placeholder:'Add your title here' %><br>
-    <%= p.text_area :content, placeholder:'Add your post here' %><br><br>
+    <%= p.text_area :title, placeholder:'Add your title here', class: "title_textarea" %><br>
+    <%= p.text_area :content, placeholder:'Add your post here', class: "post_textarea" %><br><br>
     <%= p.submit class: "btn btn-default btn-primary"%>
     <%= link_to 'All Posts', posts_path, class: "btn btn-default btn-primary" %>
 <% end %>
