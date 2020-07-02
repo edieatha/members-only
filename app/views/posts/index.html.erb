@@ -11,7 +11,7 @@
 	    <li>
 	      <%= p.content %>
 				<% if user_signed_in? %>
-					<br><strong>Author:</strong><%= current_user.email %>
+					<br><strong>Author:</strong><%= p.user.email %>
 				<% end %>
 		  </li>
 		  <% end %>
