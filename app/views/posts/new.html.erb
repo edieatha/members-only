@@ -4,6 +4,8 @@
 
 <%= stylesheet_link_tag "style.css" %>
 
+<%= render "devise/shared/nav-create-post" %>
+
 <h1>Create New Post</h1><br><br>
 <%= form_for @post do |p| %>
     <%= p.text_area :title, placeholder:'Add your title here', class: "title_textarea" %><br>
