@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+
+<%= stylesheet_link_tag "style.css" %>
+
+<%= render "devise/shared/nav" %>
+
+<h1>Members Only! Posts</h1>
+	<ul id="posts">
+	  <% @posts.each do |p| %>
+	    <li>
+	      <%= p.content %>
+				<% if user_signed_in? %>
+					<br><strong>Author:</strong><%= p.user.email %>
+				<% end %>
+		  </li>
+		  <% end %>
+	</ul>
+
