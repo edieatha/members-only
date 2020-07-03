@@ -18,8 +18,8 @@ In this project, you’ll be building an exclusive clubhouse where your members 
 ## Live Demo
 [Live Demo Link](https://morning-retreat-35367.herokuapp.com)
 
-![screenshoot](img1.png)
-![screenshoot](img2.png)
+![screenshoot](img01.png)
+![screenshoot](img02.png)
 ![screenshoot](img3.png)
 ![screenshoot](img4.png)
 
